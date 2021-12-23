@@ -5,12 +5,13 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import { connect } from 'react-redux';
 
-function App() {
+function App({mode}) {
   return (
-    <div className='App'>
+    <div className={`App ${mode}`}>
       <Header/>
-      <Nav/>
+      <Nav/>  
       <About/>
       <Skills/>
       <Projects/>
@@ -19,4 +20,10 @@ function App() {
   );
 }
 
-export default App
+function mapStateToProps(state) {
+  return {
+    mode: state.mode
+  }
+}
+
+export default connect(mapStateToProps, null)(App)

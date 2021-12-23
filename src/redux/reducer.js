@@ -1,17 +1,17 @@
 import { CHANGE_MODE, CHANGE_LANG } from './actions';
 
 const initialState = {
-	mode: 'lightMode',
+	mode: 'LightMode',
 	language: 'EN',
 };
 
 function rootReducer(state = initialState, { type, payload }) {
 	switch (type) {
 		case CHANGE_MODE:
-			if (state.mode === 'lightMode') {
-				return { ...state, mode: 'darkMode' };
+			if (state.mode === 'LightMode') {
+				return { ...state, mode: 'DarkMode' };
 			} else {
-				return { ...state, mode: 'lightMode' };
+				return { ...state, mode: 'LightMode' };
 			}
 		case CHANGE_LANG:
 			if (state.language === 'EN') {

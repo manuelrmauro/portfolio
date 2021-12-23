@@ -1,0 +1,40 @@
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 30px);
+  background-image: url('../../public/background.png'), linear-gradient(rgba(128, 128, 128, 0.5),transparent);
+  background-size: cover;
+}
+
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerTitle {
+  margin: 0;
+}
+
+.headerSubtitle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.navModes {
+  position: fixed;
+  top:0;
+  right: 0;
+  display: flex;
+  background: none;
+  z-index: 999;
+  height: 30px;
+}
+
+.navModesBtn {
+  border-radius: 50%;
+  background: none;
+}

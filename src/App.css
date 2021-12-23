@@ -1,35 +1,60 @@
-.darkMode {
-  background-color: black;
-  color: white;
-  transition: 200ms;
+.App {
+  transition: 400ms;
 }
 
-.whiteMode {
-  background-color: white;
-  color: black;
-  transition: 200ms;
+.App.DarkMode {
+  background-color: var(--dark-background);
 }
 
-.space {
-  height: 0.01rem;
-  width: 99vw;
-  background-color: black;
-  margin-top:200px;
+.App.LightMode {
+  background-color: var(--light-background);
 }
 
 .container {
-  padding-bottom: 700px;
+  transition: 400ms;
+  height: 500px;
+  margin: 0;
+  opacity: 0.2;
 }
+
+.containerDarkMode {
+  background-color: var(--dark-background);
+  color: var(--light-text);
+ 
+}
+
+.containerLightMode {
+  background-color: var(--light-background);
+  color: var(--dark-text);
+}
+
+.container.visible {
+  opacity: 1;
+}
+
+.container.sectionHeader {
+opacity: 1;
+}
+
+
 
 .nav {
   position: sticky;
   top:0;
 }
 
-.selected {
-  background-color: red;
+.selected.navBtnLightMode {
+  background-color: var(--dark-background) !important;
+  color: var(--light-text) !important;
 }
 
-.visible {
-  background-color: yellow;
+.selected.navBtnDarkMode {
+  background-color: var(--light-background) !important;
+  color: var(--dark-text) !important;
+}
+
+
+
+.btn {
+  cursor: pointer;
 }

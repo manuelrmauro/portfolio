@@ -1,28 +1,25 @@
 import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { scroller } from 'react-scroll';
-import { changeLang } from '../redux/actions';
+import './Nav.css'
 
 const scrollToSection = (id) => {
 	scroller.scrollTo(id, {
 		duration: 800,
 		delay: 0,
 		smooth: 'easeInOutQuart',
-		offset: -50,
+		offset: -29,
 	});
 };
 
-function Nav({ language, changeLang }) {
+function Nav({ mode, language}) {
 	const aboutBtn = useRef();
 	const skillsBtn = useRef();
 	const projectsBtn = useRef();
 	const contactBtn = useRef();
 	const nav = useRef();
 
-	function handleChangeLang(e) {
-		e.preventDefault();
-		changeLang();
-	}
+
 
 	useEffect(() => {
 		document.addEventListener('scroll', function (e) {
@@ -76,36 +73,35 @@ function Nav({ language, changeLang }) {
 	}, []);
 
 	return (
-		<div className="nav" ref={nav}>
-			<button onClick={() => scrollToSection('sectionAbout')} ref={aboutBtn}>
+		<div className={`nav nav${mode}`} ref={nav}>
+			<button onClick={() => scrollToSection('sectionAbout')} ref={aboutBtn} className={`btn navBtn navBtn${mode}`}>
 				{language === 'EN' ? 'ABOUT' : 'SOBRE MI'}
 			</button>
-			<button onClick={() => scrollToSection('sectionSkills')} ref={skillsBtn}>
+			<button onClick={() => scrollToSection('sectionSkills')} ref={skillsBtn} className={`btn navBtn navBtn${mode}`}>
 				{language === 'EN' ? 'SKILLS' : 'HABILIDADES'}
 			</button>
 			<button
 				onClick={() => scrollToSection('sectionProjects')}
-				ref={projectsBtn}
+				ref={projectsBtn} className={`btn navBtn navBtn${mode}`}
 			>
 				{language === 'EN' ? 'PROJECTS' : 'PROYECTOS'}
 			</button>
 			<button
 				onClick={() => scrollToSection('sectionContact')}
-				ref={contactBtn}
+				ref={contactBtn} className={`btn navBtn navBtn${mode}`}
 			>
 				{language === 'EN' ? 'CONTACT' : 'CONTACTO'}
 			</button>
-			<button onClick={(e) => handleChangeLang(e)}>
-				{language === 'EN' ? 'ES' : 'EN'}
-			</button>
+			
 		</div>
 	);
 }
 
 function mapStateToProps(state) {
 	return {
+		mode: state.mode,
 		language: state.language,
 	};
 }
 
-export default connect(mapStateToProps, { changeLang })(Nav);
+export default connect(mapStateToProps, null)(Nav);

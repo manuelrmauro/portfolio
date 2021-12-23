@@ -1,18 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-function Projects ({language}) {
+function Projects ({language, mode}) {
   return (
-    <div className='container section sectionProjects'>
-      {language === 'EN' && 'PROJECTS'} 
-      {language === 'ES' && 'PROYECTOS'} 
+    <div className={`container container${mode} section sectionProjects`}>
+      {language === 'EN' && <h2>Projects</h2>} 
+      {language === 'ES' && <h2>Proyectos</h2>} 
     </div>
   )
 }
 
 function mapStateToProps (state) {
   return {
-    language : state.language
+    language : state.language,
+    mode: state.mode
   }
 }
 

@@ -1,18 +1,26 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-function About ({language}) {
+function About ({language, mode}) {
   return (
-    <div className='container section sectionAbout'>
-      {language === 'EN' && 'ABOUT'} 
-      {language === 'ES' && 'SOBRE MI'} 
+    <div className={`container container${mode} section sectionAbout`}>
+      {language === 'EN' && <h2>About</h2>} 
+      {language === 'ES' && <h2>Sobre mi</h2>} 
+      <p>asjdhashdkhashdhas texto ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj ah si aca pruebo blab abl
+        chicos? YA les dije que soy Gabiel Rolom? asjdhashdkhashdhas texto ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj ah si aca pruebo blab abl
+        chicos? YA les dije que soy Gabiel Rolom ?asjdhashdkhashdhas texto ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj ah si aca pruebo blab abl
+        chicos? YA les dije que soy Gabiel Rolom? asjdhashdkhashdhas texto ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj ah si aca pruebo blab abl
+        chicos? YA les dije que soy Gabiel Rolom?  asjdhashdkhashdhas texto ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj ah si aca pruebo blab abl
+        chicos? YA les dije que soy Gabiel Rolom?
+      </p>
     </div>
   )
 }
 
 function mapStateToProps (state) {
   return {
-    language : state.language
+    language : state.language,
+    mode: state.mode
   }
 }
 

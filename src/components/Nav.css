@@ -1,0 +1,41 @@
+.nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  transition: 400ms;
+  z-index: 998;
+}
+
+.navLightMode {
+ background-color: var(--light-background);
+
+}
+
+.navDarkMode {
+ background-color: var(--dark-background);
+
+}
+
+.navBtn {
+  border: none;
+  transition: 400ms;
+}
+
+.navBtnLightMode {
+  background-color: var(--light-background);
+  color: var(--dark-text)
+}
+
+.navBtnLightMode:hover {
+  background-color: var(--light-background-hover);
+}
+
+.navBtnDarkMode {
+  background-color: var(--dark-background);
+   color: var(--light-text);
+}
+
+.navBtnDarkMode:hover {
+  background-color: var(--dark-background-hover);
+}
