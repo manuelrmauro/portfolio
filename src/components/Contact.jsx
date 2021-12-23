@@ -1,20 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-export const Contact = (props) => {
+function Contact ({language}) {
   return (
     <div className='container section sectionContact'>
-      CONTACT
+      {language === 'EN' && 'CONTACT'} 
+      {language === 'ES' && 'CONTACTO'} 
     </div>
   )
 }
 
-const mapStateToProps = (state) => ({
-  
-})
-
-const mapDispatchToProps = {
-  
+function mapStateToProps (state) {
+  return {
+    language : state.language
+  }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Contact)
+export default connect(mapStateToProps, null)(Contact)

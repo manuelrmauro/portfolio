@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { scroller } from 'react-scroll';
+import { changeLang } from '../redux/actions';
 
 const scrollToSection = (id) => {
 	scroller.scrollTo(id, {
@@ -11,16 +12,20 @@ const scrollToSection = (id) => {
 	});
 };
 
-export const Nav = (props) => {
+function Nav({ language, changeLang }) {
 	const aboutBtn = useRef();
 	const skillsBtn = useRef();
 	const projectsBtn = useRef();
 	const contactBtn = useRef();
 
+	function handleChangeLang(e) {
+		e.preventDefault();
+		changeLang();
+	}
+
 	useEffect(() => {
 		document.addEventListener('scroll', function (e) {
-      const positions = document
-				.getElementsByClassName('section')
+			const positions = document.getElementsByClassName('section');
 			const sections = [
 				{ pos: positions[0].getBoundingClientRect().y, elem: aboutBtn },
 				{ pos: positions[1].getBoundingClientRect().y, elem: skillsBtn },
@@ -34,19 +39,24 @@ export const Nav = (props) => {
 					''
 				);
 			});
+			for (let i = 0; i < positions.length; i++) {
+				positions[i].className = positions[i].className.replace(' visible', '');
+			}
+
 			for (let i = 0; i < sections.length; i++) {
-        if(sections[0].pos > windowSize / 2) break
-        if (i === sections.length - 1) {
-          sections[i].elem.current.className =
+				if (sections[0].pos > windowSize / 2) break;
+				if (i === sections.length - 1) {
+					positions[i].className = positions[i].className + ' visible';
+					sections[i].elem.current.className =
 						sections[i].elem.current.className + ' selected';
 					break;
-        }
+				}
 				if (
 					(Math.floor(sections[i].pos) > 0 &&
-					Math.floor(sections[i].pos) < windowSize / 2) ||
-          (
-					Math.floor(sections[i + 1].pos) > windowSize / 2)
+						Math.floor(sections[i].pos) < windowSize / 2) ||
+					Math.floor(sections[i + 1].pos) > windowSize / 2
 				) {
+					positions[i].className = positions[i].className + ' visible';
 					sections[i].elem.current.className =
 						sections[i].elem.current.className + ' selected';
 					break;
@@ -58,29 +68,34 @@ export const Nav = (props) => {
 	return (
 		<div className="nav" ref={(el) => {}}>
 			<button onClick={() => scrollToSection('sectionAbout')} ref={aboutBtn}>
-				ABOUT
+			{language === 'EN' ? 'ABOUT' : 'SOBRE MI'}
 			</button>
 			<button onClick={() => scrollToSection('sectionSkills')} ref={skillsBtn}>
-				SKILLS
+			{language === 'EN' ? 'SKILLS' : 'HABILIDADES'}
 			</button>
 			<button
 				onClick={() => scrollToSection('sectionProjects')}
 				ref={projectsBtn}
 			>
-				PROJECTS
+				{language === 'EN' ? 'PROJECTS' : 'PROYECTOS'}
 			</button>
 			<button
 				onClick={() => scrollToSection('sectionContact')}
 				ref={contactBtn}
 			>
-				CONTACT
+				{language === 'EN' ? 'CONTACT' : 'CONTACTO'}
+			</button>
+			<button onClick={(e) => handleChangeLang(e)}>
+				{language === 'EN' ? 'ES' : 'EN'}
 			</button>
 		</div>
 	);
-};
+}
 
-const mapStateToProps = (state) => ({});
+function mapStateToProps(state) {
+	return {
+		language: state.language,
+	};
+}
 
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Nav);
+export default connect(mapStateToProps, { changeLang })(Nav);

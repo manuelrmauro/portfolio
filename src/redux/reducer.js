@@ -15,9 +15,9 @@ function rootReducer(state = initialState, { type, payload }) {
 			}
 		case CHANGE_LANG:
 			if (state.language === 'EN') {
-				return { ...state, mode: 'ES' };
+				return { ...state, language: 'ES' };
 			} else {
-				return { ...state, mode: 'EN' };
+				return { ...state, language: 'EN' };
 			}
 		default:
 			return state;

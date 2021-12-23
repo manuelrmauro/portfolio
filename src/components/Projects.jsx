@@ -1,20 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-export const Projects = (props) => {
+function Projects ({language}) {
   return (
     <div className='container section sectionProjects'>
-      PROJECTS
+      {language === 'EN' && 'PROJECTS'} 
+      {language === 'ES' && 'PROYECTOS'} 
     </div>
   )
 }
 
-const mapStateToProps = (state) => ({
-  
-})
-
-const mapDispatchToProps = {
-  
+function mapStateToProps (state) {
+  return {
+    language : state.language
+  }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Projects)
+export default connect(mapStateToProps, null)(Projects)
