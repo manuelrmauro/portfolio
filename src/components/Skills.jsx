@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 export const Skills = (props) => {
   return (
-    <div className='container sectionSkills'>
+    <div className='container section sectionSkills'>
       SKILLS
     </div>
   )

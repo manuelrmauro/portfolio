@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 export const About = (props) => {
   return (
-    <div className='container sectionAbout'>
+    <div className='container section sectionAbout'>
       ABOUT
     </div>
   )
