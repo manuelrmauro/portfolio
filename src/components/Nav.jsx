@@ -11,8 +11,6 @@ const scrollToSection = (id) => {
   });
 };
 
-const ref = useRef()
-
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
@@ -25,7 +23,7 @@ function isInViewport(element) {
 export const Nav = (props) => {
 
   return (
-    <div className='nav'>
+    <div className='nav' onScrollCapture={e => console.log(e)}>
       <button onClick={() => scrollToSection('sectionAbout')}>ABOUT</button>
       <button onClick={() => scrollToSection('sectionSkills')}>SKILLS</button>
       <button onClick={() => scrollToSection('sectionProjects')}>PROJECTS</button>
