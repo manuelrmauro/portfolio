@@ -10,7 +10,7 @@ function Project({ name, summary, video, screenshots, github , link}) {
 		<div className="project">
 			<h3>{name}</h3>
 			<p>{summary}</p>
-			{link.lenght && <a href={link} target="blank"><p>Link to App</p></a>}
+			{link.length ? <a href={link} target="blank"><p>Link to App</p></a>: null}
 			<a href={github} target="blank"><p><BsGithub/>{github.replace('https://github.com/manuelrmauro','')}</p></a>
 			<div className="videoWraper">
 				<ReactPlayer
