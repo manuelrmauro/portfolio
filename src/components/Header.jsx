@@ -1,23 +1,30 @@
-import React,{useEffect,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import './Header.css';
 import { changeLang, changeMode } from '../redux/actions';
-import {BsLightbulbOff,BsLightbulb} from 'react-icons/bs'
+import { BsLightbulbOff, BsLightbulb } from 'react-icons/bs';
 
 const scrollToSection = () => {
 	window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 function Header({ language, mode, changeLang, changeMode }) {
-	const [ocultBtn, setOcultBtn] = useState(' ocultBtn')
+	const [ocultBtn, setOcultBtn] = useState(' ocultBtn');
 
 	useEffect(() => {
-		document.addEventListener('scroll',() => {
-			if (window.scrollY > 0) setOcultBtn('')
-			else setOcultBtn(' ocultBtn')
-		})
-	},[window.scrollY])
+		document.addEventListener('scroll', () => {
+			if (window.scrollY > 0) setOcultBtn('');
+			else setOcultBtn(' ocultBtn');
+		});
+	}, [window.scrollY]);
 
+	useEffect(() => {
+		if (language === 'EN') {
+			document.title = 'Manuel Mauro | Developer';
+		} else {
+			document.title = 'Manuel Mauro | Programador';
+		}
+	}, [language]);
 
 	function handleChangeLang(e) {
 		e.preventDefault();
@@ -33,18 +40,18 @@ function Header({ language, mode, changeLang, changeMode }) {
 		<div className={`container container${mode} sectionHeader`}>
 			<div className="navModes">
 				<button
-				onClick={() => scrollToSection()}
-				className={`btn navBtn navModesBtn navBtn${mode} ${ocultBtn} topBtn`}
-			>
-				{language === 'EN' && 'GO TOP'}
-				{language === 'ES' && 'IR ARRIBA'}
-			</button>
-			
+					onClick={() => scrollToSection()}
+					className={`btn navBtn navModesBtn navBtn${mode} ${ocultBtn} topBtn`}
+				>
+					{language === 'EN' && 'GO TOP'}
+					{language === 'ES' && 'IR ARRIBA'}
+				</button>
+
 				<button
 					onClick={(e) => handleChangeMode(e)}
 					className={`btn navBtn navBtn${mode} navModesBtn`}
 				>
-					{mode === 'LightMode' ? <BsLightbulbOff/> : <BsLightbulb/>}
+					{mode === 'LightMode' ? <BsLightbulbOff /> : <BsLightbulb />}
 				</button>
 				<button
 					onClick={(e) => handleChangeLang(e)}
