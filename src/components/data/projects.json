@@ -1,14 +1,14 @@
 [
 	{
 		"EN": {
-			"name": "My Portfolio",
+			"name": "Portfolio",
 			"summary": "Description here",
 			"video": "https://vimeo.com/659396511",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/portfolio"
 		},
 		"ES": {
-			"name": "Mi Portfolio",
+			"name": "Portfolio",
 			"summary": "Descripcion aqui",
 			"video": "https://vimeo.com/659396511",
 			"screenshots": [],

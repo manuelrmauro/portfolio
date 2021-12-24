@@ -12,6 +12,7 @@
   align-items: center;
   margin: 0 !important;
   max-width: 800px;
+  gap:10px;
 }
 
 .project p {
@@ -21,7 +22,7 @@
 
 .project h3 {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 

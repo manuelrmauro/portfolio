@@ -1,6 +1,7 @@
 .aboutContainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 0;
 }
 
@@ -8,4 +9,8 @@
   margin: 0px auto;
   max-width: 800px;
   text-align: justify;
+}
+
+.curriculum {
+  margin-top: 16px !important;
 }

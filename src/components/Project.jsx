@@ -2,13 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ReactPlayer from 'react-player';
 import './Project.css';
+import {BsGithub} from 'react-icons/bs'
+
 
 function Project({ name, summary, video, screenshots, github }) {
 	return (
 		<div className="project">
 			<h3>{name}</h3>
 			<p>{summary}</p>
-			<a href={github} target="blank"><p>{github}</p></a>
+			<a href={github} target="blank"><p><BsGithub/>{github.replace('https://github.com/manuelrmauro','')}</p></a>
 			<div className="videoWraper">
 				<ReactPlayer
 					width='100%'

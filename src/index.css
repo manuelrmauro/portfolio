@@ -20,6 +20,7 @@ body {
 
 .btn, .footer {
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
 }
 
 h1 {
@@ -36,4 +37,40 @@ h2 {
 
 h3 {
   font-size: 2rem;
+}
+
+p , a, label {
+  font-size: 1.15rem;
+}
+
+@media only screen and (max-width: 600px) {
+  html   {
+    font-size: 12px;
+  }
+  
+  .nav {
+    justify-content: start !important;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+ 
+}
+
+@media only screen and (max-width: 362px) {
+  html   {
+    font-size: 12px;
+  }
+  
+  .nav {
+    justify-content: start !important;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+  }
+  .headerSubtitle {
+    text-align: center !important;
+  }
 }

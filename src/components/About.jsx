@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './About.css';
 import info from './data/info.json';
+import {BsFileEarmarkText} from 'react-icons/bs'
 
 function About({ language, mode }) {
 	return (
@@ -13,6 +14,7 @@ function About({ language, mode }) {
 					{language === 'EN' && info.about.EN}
 					{language === 'ES' && info.about.ES}
 				</p>
+				<p className='curriculum'><BsFileEarmarkText/><a href={info.CV} target="blank">Curriculum Vitae</a></p>
 			</div>
 		</div>
 	);

@@ -24,11 +24,12 @@
 
 .navBtnLightMode {
   background-color: var(--light-background);
-  color: var(--dark-text)
+  color: var(--dark-text);
 }
 
 .navBtnLightMode:hover {
   background-color: var(--light-background-hover) !important;
+  color: var(--dark-text) !important;
 }
 
 .navBtnDarkMode {
@@ -38,4 +39,5 @@
 
 .navBtnDarkMode:hover {
   background-color: var(--dark-background-hover) !important;
+  color: var(--light-text) !important;
 }

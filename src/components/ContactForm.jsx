@@ -11,6 +11,7 @@ function ContactForm ({language, mode}) {
 
     emailjs.sendForm('service_k6jcsgp', 'template_iazsyna', form.current, 'user_FzRaXIfWxWZbawjuvkySU')
       .then((result) => {
+          console.log(form.current)
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
