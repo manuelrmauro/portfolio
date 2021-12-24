@@ -1,9 +1,11 @@
 .aboutContainer {
   display: flex;
   justify-content: center;
+  margin-top: 0;
 }
 
 .aboutContainer p {
+  margin: 0px auto;
   max-width: 800px;
   text-align: justify;
 }

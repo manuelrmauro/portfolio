@@ -1,8 +1,9 @@
 import React,{useRef} from 'react'
 import { connect } from 'react-redux'
 import emailjs from 'emailjs-com';
+import './ContactForm.css'
 
-function ContactForm ({language}) {
+function ContactForm ({language, mode}) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -23,21 +24,22 @@ function ContactForm ({language}) {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form className='contactForm' ref={form} onSubmit={sendEmail}>
       <label>{language === 'EN'?'Name':'Nombre'}</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
       <label>{language === 'EN'?'Message':'Mensaje'}</label>
       <textarea name="message" />
-      <input type="submit" value={language === 'EN'?'Send':'Enviar'} />
+      <input className={`contactBtn ${mode}`} type="submit" value={language === 'EN'?'Send':'Enviar'} />
     </form>
   );
 }
 
 function mapStateToProps (state) {
   return {
-    language : state.language
+    language : state.language,
+    mode: state.mode
   }
 }
 

@@ -10,17 +10,17 @@
 }
 
 
-.headerContainer {
-  text-align: end;
-}
 
 .headerTitle {
   margin: 0;
+  text-align: center;
+  
 }
 
 .headerSubtitle {
   margin: 0;
   margin-bottom: 20px;
+  text-align: end;
 }
 
 .navModes {

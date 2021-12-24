@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import './About.css'
+import './About.css';
+import info from './data/info.json';
 
 function About({ language, mode }) {
 	return (
@@ -9,20 +10,8 @@ function About({ language, mode }) {
 			{language === 'ES' && <h2>Sobre mi</h2>}
 			<div className="aboutContainer">
 				<p>
-					asjdhashdkhashdhas texto ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd
-					hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj ah si aca pruebo blab abl
-					chicos? YA les dije que soy Gabiel Rolom? asjdhashdkhashdhas texto
-					ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash
-					dhg adsbgasdgkj ah si aca pruebo blab abl chicos? YA les dije que soy
-					Gabiel Rolom ?asjdhashdkhashdhas texto ioasjdjkasdh asd
-					jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj
-					ah si aca pruebo blab abl chicos? YA les dije que soy Gabiel Rolom?
-					asjdhashdkhashdhas texto ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd
-					hkahgksbhasdghadshkadsbkhash dhg adsbgasdgkj ah si aca pruebo blab abl
-					chicos? YA les dije que soy Gabiel Rolom? asjdhashdkhashdhas texto
-					ioasjdjkasdh asd jasdkhhkashdbakhsdkh asd hkahgksbhasdghadshkadsbkhash
-					dhg adsbgasdgkj ah si aca pruebo blab abl chicos? YA les dije que soy
-					Gabiel Rolom?
+					{language === 'EN' && info.about.EN}
+					{language === 'ES' && info.about.ES}
 				</p>
 			</div>
 		</div>

@@ -83,7 +83,6 @@ p, label {
 
 .section {
   padding: 10px;
-  min-height: 80vh;
 }
 .containerDarkMode.section h2 {
   color: var(--light-background-hover) !important;

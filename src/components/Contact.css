@@ -1,0 +1,14 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 79vh;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  gap:4px;
+  margin-bottom: 0;
+}

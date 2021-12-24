@@ -8,7 +8,7 @@ function Project({ name, summary, video, screenshots, github }) {
 		<div className="project">
 			<h3>{name}</h3>
 			<p>{summary}</p>
-			<a href={github}><p>{github}</p></a>
+			<a href={github} target="blank"><p>{github}</p></a>
 			<div className="videoWraper">
 				<ReactPlayer
 					width='100%'
