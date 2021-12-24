@@ -1,10 +1,24 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import { connect } from 'react-redux';
-import Nav from './Nav';
 import './Header.css';
 import { changeLang, changeMode } from '../redux/actions';
+import {BsLightbulbOff,BsLightbulb} from 'react-icons/bs'
+
+const scrollToSection = () => {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 function Header({ language, mode, changeLang, changeMode }) {
+	const [ocultBtn, setOcultBtn] = useState(' ocultBtn')
+
+	useEffect(() => {
+		document.addEventListener('scroll',() => {
+			if (window.scrollY > 0) setOcultBtn('')
+			else setOcultBtn(' ocultBtn')
+		})
+	},[window.scrollY])
+
+
 	function handleChangeLang(e) {
 		e.preventDefault();
 		changeLang();
@@ -12,17 +26,25 @@ function Header({ language, mode, changeLang, changeMode }) {
 	function handleChangeMode(e) {
 		e.preventDefault();
 		changeMode();
-		window.scroll(0, window.scrollY + 1);
+		window.scroll(0, window.scrollY + 2);
 		window.scroll(0, window.scrollY - 1);
 	}
 	return (
 		<div className={`container container${mode} sectionHeader`}>
 			<div className="navModes">
 				<button
+				onClick={() => scrollToSection()}
+				className={`btn navBtn navModesBtn navBtn${mode} ${ocultBtn} topBtn`}
+			>
+				{language === 'EN' && 'GO TOP'}
+				{language === 'ES' && 'IR ARRIBA'}
+			</button>
+			
+				<button
 					onClick={(e) => handleChangeMode(e)}
 					className={`btn navBtn navBtn${mode} navModesBtn`}
 				>
-					{mode === 'LightMode' ? 'L' : 'D'}
+					{mode === 'LightMode' ? <BsLightbulbOff/> : <BsLightbulb/>}
 				</button>
 				<button
 					onClick={(e) => handleChangeLang(e)}

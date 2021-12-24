@@ -28,7 +28,7 @@
 }
 
 .navBtnLightMode:hover {
-  background-color: var(--light-background-hover);
+  background-color: var(--light-background-hover) !important;
 }
 
 .navBtnDarkMode {
@@ -37,5 +37,5 @@
 }
 
 .navBtnDarkMode:hover {
-  background-color: var(--dark-background-hover);
+  background-color: var(--dark-background-hover) !important;
 }

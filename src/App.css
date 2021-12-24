@@ -1,37 +1,33 @@
 .App {
   transition: 400ms;
 }
-
 .App.DarkMode {
   background-color: var(--dark-background);
 }
-
 .App.LightMode {
   background-color: var(--light-background);
 }
+
+
 
 .container {
   transition: 400ms;
   height: 500px;
   margin: 0;
-  opacity: 0.2;
+  opacity: 0.1;
 }
-
 .containerDarkMode {
   background-color: var(--dark-background);
   color: var(--light-text);
  
 }
-
 .containerLightMode {
   background-color: var(--light-background);
   color: var(--dark-text);
 }
-
 .container.visible {
   opacity: 1;
 }
-
 .container.sectionHeader {
 opacity: 1;
 }
@@ -41,15 +37,14 @@ opacity: 1;
 .nav {
   position: sticky;
   top:0;
+  margin-top: -1px;
 }
-
 .selected.navBtnLightMode {
-  background-color: var(--dark-background) !important;
+  background-color: var(--dark-background-hover) !important;
   color: var(--light-text) !important;
 }
-
 .selected.navBtnDarkMode {
-  background-color: var(--light-background) !important;
+  background-color: var(--light-background-hover) !important;
   color: var(--dark-text) !important;
 }
 
@@ -57,4 +52,27 @@ opacity: 1;
 
 .btn {
   cursor: pointer;
+}
+.ocultBtn {
+  opacity: 0;
+  visibility: hidden;
+}
+.topBtn {
+  color: grey !important;
+}
+.footer {
+text-align: end;
+color:grey;
+padding: 4px;
+}
+
+
+
+.section {
+  padding: 10px;
+}
+
+.section h3 {
+  font-weight: 100;
+  padding-left: 10px;
 }

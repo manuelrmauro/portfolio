@@ -31,21 +31,12 @@ function Nav({ mode, language}) {
 				{ pos: positions[3].getBoundingClientRect().y, elem: contactBtn },
 			];
 			const windowSize = window.innerHeight;
-			const headerBottom = document
-				.getElementsByClassName('sectionHeader')[0]
-				.getBoundingClientRect().bottom;
 			sections.forEach(({ elem }) => {
 				elem.current.className = elem.current.className.replace(
 					' selected',
 					''
 				);
 			});
-			// TODO RESOLVER ACOMODAR NAV
-			/* if (nav.current.getBoundingClientRect().y <= 0 && Math.floor(headerBottom) < windowSize/2) {
-				nav.current.className = nav.current.className + ' sticky';
-			} else {
-				nav.current.className = nav.current.className.replaceAll(' sticky', '');
-			} */
 			for (let i = 0; i < positions.length; i++) {
 				positions[i].className = positions[i].className.replace(' visible', '');
 			}

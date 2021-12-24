@@ -12,14 +12,12 @@ body {
   --light-background: white;
   --light-background-hover: rgb(225, 225, 225);
   --light-text: white;
-  --light-text-opac: rgba(255, 255, 255, 0.2);
   --dark-text: rgb(30, 30, 30) ;
-  --dark-text-opac: rgba(30, 30, 30, 0.2) ;
   --dark-background: rgb(35, 35, 35);
   --dark-background-hover: rgb(50, 50, 50);
 }
 
-.nav {
+.btn, .footer {
   font-family: 'Roboto Condensed', sans-serif;
 }
 

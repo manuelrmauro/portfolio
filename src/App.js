@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import { connect } from 'react-redux';
+import Footer from './components/Footer';
 
 function App({mode}) {
   return (
@@ -16,6 +17,7 @@ function App({mode}) {
       <Skills/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
