@@ -22,6 +22,7 @@ function Projects({ language, mode }) {
 						video={project.EN.video}
 						screenshots={project.EN.screenshots}
 						github={project.EN.github}
+						link={project.EN.link}
 					/>
 				))}
 			</div>
