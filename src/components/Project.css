@@ -1,0 +1,27 @@
+.videoWraper {
+  width: 90vw; 
+  height: 50vw;
+  max-width: 800px;
+  max-height: 450px;
+}
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 !important;
+  max-width: 800px;
+}
+
+.project p {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+
+

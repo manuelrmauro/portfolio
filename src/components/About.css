@@ -1,0 +1,9 @@
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContainer p {
+  max-width: 800px;
+  text-align: justify;
+}

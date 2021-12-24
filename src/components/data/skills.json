@@ -1,0 +1,9 @@
+{
+  "technical" : ["JavaScript", "React", "Redux","Express","Node.js","HTML","CSS","Sequelize","SQL","Postgres","GitHub"],
+  "soft" : {
+    "EN": ["Scrum","Creativity","Problem solving","Flexibility","Analytical thinking","Critical thinking","Perseverance","Curiosity",
+      "Self-taught","Emotional intelligence","Adaptability","Positive attitude"],
+    "ES": ["Scrum","Creatividad","Resolución de problemas","Flexibilidad","Pensamiento analítico","Prensamiento crítico","Perseverancia","Curiosidad",
+      "Autodidacta","Inteligencia emocional","Adaptabilidad","Actitud positiva"]
+  }
+}
