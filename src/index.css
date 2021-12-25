@@ -44,33 +44,48 @@ p , a, label {
 }
 
 @media only screen and (max-width: 600px) {
-  html   {
-    font-size: 12px;
-  }
-  
-  .nav {
-    justify-content: start !important;
-  }
+	html {
+		font-size: 12px;
+	}
 
-  .btn {
-    font-size: 0.9rem;
+	.nav {
+		justify-content: start !important;
+	}
+
+	.btn {
+		font-size: 0.9rem;
+    padding-left: 3px;
+		padding-right: 3px;
+	}
+	.navModesBtn {
+		font-size: 1.15rem;
+	}
+  .topBtn {
+    font-size:0.85rem !important;
   }
- 
 }
 
 @media only screen and (max-width: 362px) {
-  html   {
-    font-size: 12px;
-  }
-  
-  .nav {
-    justify-content: start !important;
-  }
+	html {
+		font-size: 12px;
+	}
 
-  .btn {
-    font-size: 0.7rem;
-  }
-  .headerSubtitle {
-    text-align: center !important;
+	.nav {
+		justify-content: start !important;
+	}
+
+	.btn {
+		font-size: 0.8rem;
+    padding-left: 2.5px;
+		padding-right: 2.5px;
+	}
+	.headerSubtitle {
+		text-align: center !important;
+	}
+  .navModesBtn {
+		font-size: 1.15rem;
+	}
+  .topBtn {
+    font-size:0.7rem !important;
   }
 }

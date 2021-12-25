@@ -33,7 +33,7 @@ function Header({ language, mode, changeLang, changeMode }) {
 	function handleChangeMode(e) {
 		e.preventDefault();
 		changeMode();
-		window.scroll(0, window.scrollY + 2);
+		window.scroll(0, window.scrollY + 1);
 		window.scroll(0, window.scrollY - 1);
 	}
 	return (
@@ -43,8 +43,8 @@ function Header({ language, mode, changeLang, changeMode }) {
 					onClick={() => scrollToSection()}
 					className={`btn navBtn navModesBtn navBtn${mode} ${ocultBtn} topBtn`}
 				>
-					{language === 'EN' && 'GO TOP'}
-					{language === 'ES' && 'IR ARRIBA'}
+					{language === 'EN' && 'TOP'}
+					{language === 'ES' && 'ARRIBA'}
 				</button>
 
 				<button
