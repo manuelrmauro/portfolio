@@ -3,7 +3,7 @@
 		"EN": {
 			"name": "Portfolio",
 			"summary": "Description here",
-			"video": "https://vimeo.com/659396511",
+			"video": "",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/portfolio",
 			"link": ""
@@ -11,7 +11,7 @@
 		"ES": {
 			"name": "Portfolio",
 			"summary": "Descripcion aqui",
-			"video": "https://vimeo.com/659396511",
+			"video": "",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/portfolio",
 			"link": ""
@@ -20,16 +20,16 @@
 	{
 		"EN": {
 			"name": "Recipes App",
-			"summary": "Description here",
-			"video": "https://vimeo.com/659396511",
+			"summary": "In this App you can search existing recipes brought from an external api. The search can be filtered by diet, and can be ordered alphabetically and by score. Also you can create new recipes.<br/>It was done as a practice to apply the knowledge learned in the Henry bootcamp.",
+			"video": "https://vimeo.com/660113805",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/Recipes-App",
 			"link": ""
 		},
 		"ES": {
 			"name": "Recetas App",
-			"summary": "Descripcion aqui",
-			"video": "https://vimeo.com/659396511",
+			"summary": "Esta App sirve para buscar recetas existentes traidas de una api externa. La búsqueda puede ser filtrada por dietas, y puede ser ordenada alfabeticamente y por puntaje. También te permite añadir nuevas recetas.<br/>Fue hecha como práctica para aplicar el conocimiento aprendido en el bootcamp Henry.",
+			"video": "https://vimeo.com/660113805",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/Recipes-App",
 			"link": ""
@@ -38,7 +38,7 @@
 	{
 		"EN": {
 			"name": "Weather App",
-			"summary": "Description here",
+			"summary": "This App that is used to see the weather of any part of the world, in real time.<br/>It was done as a practice to apply the knowledge learned in the Henry bootcamp.",
 			"video": "https://vimeo.com/659396511",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/weatherApp",
@@ -46,7 +46,7 @@
 		},
 		"ES": {
 			"name": "Clima App",
-			"summary": "Descripcion aqui",
+			"summary": "Esta App sirve para ver el clima de cualquier parte del mundo, en tiempo real.<br/>Fue hecha como práctica para aplicar el conocimiento aprendido en el bootcamp Henry.",
 			"video": "https://vimeo.com/659396511",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/weatherApp",

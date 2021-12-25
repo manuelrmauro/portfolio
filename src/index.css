@@ -50,6 +50,8 @@ p , a, label {
 
 	.nav {
 		justify-content: start !important;
+		position: fixed !important;
+		top: 0;
 	}
 
 	.btn {
@@ -63,6 +65,11 @@ p , a, label {
   .topBtn {
     font-size:0.85rem !important;
   }
+	.sectionHeader {
+		background-size: 250% !important;
+		background-position:top;
+		height: 100vh !important;
+	}
 }
 
 @media only screen and (max-width: 362px) {
@@ -70,9 +77,7 @@ p , a, label {
 		font-size: 12px;
 	}
 
-	.nav {
-		justify-content: start !important;
-	}
+	
 
 	.btn {
 		font-size: 0.8rem;
