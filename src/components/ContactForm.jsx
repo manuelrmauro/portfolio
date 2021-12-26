@@ -27,11 +27,11 @@ function ContactForm ({language, mode}) {
   return (
     <form className='contactForm' ref={form} onSubmit={sendEmail}>
       <label>{language === 'EN'?'Name':'Nombre'}</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="user_name" placeholder={language === 'EN'?'Enter your name...':'Ingresa tu nombre... '} />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="user_email" placeholder={language === 'EN'?'Enter your email...':'Ingresa tu email... '}  />
       <label>{language === 'EN'?'Message':'Mensaje'}</label>
-      <textarea name="message" />
+      <textarea name="message"  placeholder={language === 'EN'?'Enter your message...':'Ingresa tu mensaje... '} />
       <input className={`contactBtn ${mode}`} type="submit" value={language === 'EN'?'Send':'Enviar'} />
     </form>
   );

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './About.css';
 import info from './data/info.json';
 import {BsFileEarmarkText} from 'react-icons/bs'
+import parse from 'html-react-parser';
 
 function About({ language, mode }) {
 	return (
@@ -11,8 +12,8 @@ function About({ language, mode }) {
 			{language === 'ES' && <h2>Sobre mi</h2>}
 			<div className="aboutContainer">
 				<p>
-					{language === 'EN' && info.about.EN}
-					{language === 'ES' && info.about.ES}
+					{language === 'EN' && parse(info.about.EN)}
+					{language === 'ES' && parse(info.about.ES)}
 				</p>
 				<p className='curriculum'><BsFileEarmarkText/><a href={info.CV} target="blank">Curriculum Vitae</a></p>
 			</div>

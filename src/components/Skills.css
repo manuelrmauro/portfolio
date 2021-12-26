@@ -16,6 +16,7 @@
   border-radius: 6px;
   cursor: default ;
   transition: 400ms;
+  font-weight: normal;
 }
 
 .skill.LightMode {

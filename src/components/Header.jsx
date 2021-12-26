@@ -38,6 +38,24 @@ function Header({ language, mode, changeLang, changeMode }) {
 	}
 	return (
 		<div className={`container container${mode} sectionHeader`}>
+			
+			<div className='background'></div>
+			<div className='background bg2'></div>
+			<div className='background bg3'></div>
+			<div className='background bg4'></div>
+			<div className='background bg5'></div>
+			<div className='background bg6'></div>
+			<div className='background bg7'></div>
+			<div className='background bg8'></div>
+			<div className='background bg9'></div>
+			<div className='background bg12'></div>
+			<div className='background bg13'></div>
+			<div className='background bg14'></div>
+			<div className='background bg15'></div>
+			<div className='background bg16'></div>
+			<div className='background bg17'></div>
+			<div className='background bg18'></div>
+			<div className='background bg19'></div>
 			<div className="navModes">
 				<button
 					onClick={() => scrollToSection()}

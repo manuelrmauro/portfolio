@@ -4,12 +4,130 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - 30px);
-  background-image: url('../../public/background.png'), linear-gradient(rgba(128, 128, 128, 0.3),transparent);
-  background-repeat: no-repeat;
-  background-size:100%;
+  background: linear-gradient(rgba(128, 128, 128, 0.3),transparent);
 }
 
 
+
+
+
+.background {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  z-index:1;
+  background-image: url('../../public/background.png') ;
+  background-repeat: no-repeat;
+  background-size:130%;
+  animation:normal infinite opacity 40s;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+
+.bg2 {
+  animation:normal infinite opacity 55s;
+  background-size: 110%;
+}
+
+.bg3 {
+  animation:reverse infinite opacity 30s;
+  background-size: 120%;
+  background-image: url('../../public/background2.png') ;
+}
+.bg4 {
+  animation:normal infinite opacity 35s;
+  background-size: 140%;
+}
+.bg5 {
+  animation:reverse infinite opacity 45s;
+  background-size: 150%;
+  background-image: url('../../public/background2.png') ;
+}
+.bg6 {
+  animation:normal infinite opacity 75s;
+  background-size: 130%;
+  background-image: url('../../public/background2.png') ;
+}
+.bg7 {
+  animation:reverse infinite opacity 60s;
+  background-size: 120%;
+
+}
+.bg8 {
+  animation:normal infinite opacity 65s;
+  background-size: 150%;
+}
+.bg9 {
+  animation:reverse infinite opacity 85s;
+  background-size: 110%;
+  background-image: url('../../public/background2.png') ;
+}
+.bg12 {
+  animation:normal infinite opacity 20s;
+  background-size: 115%;
+  background-image: url('../../public/background2.png') ;
+}
+
+.bg13 {
+  animation:reverse infinite opacity 50s;
+  background-size: 125%;
+  background-image: url('../../public/background2.png') ;
+}
+.bg14 {
+  animation:normal infinite opacity 65s;
+  background-size: 145%;
+}
+.bg15 {
+  animation:reverse infinite opacity 35s;
+  background-size: 155%;
+  background-image: url('../../public/background2.png') ;
+}
+.bg16 {
+  animation:normal infinite opacity 30s;
+  background-size: 135%;
+  background-image: url('../../public/background2.png') ;
+}
+.bg17 {
+  animation:reverse infinite opacity 75s;
+  background-size: 125%;
+
+}
+.bg18 {
+  animation:normal infinite opacity 85s;
+  background-size: 155%;
+}
+.bg19 {
+  animation:reverse infinite opacity 35s;
+  background-size: 115%;
+  background-image: url('../../public/background2.png') ;
+}
+
+@keyframes opacity {
+  0% {
+    background-position:-20px left;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity:0;
+    background-size: 200%;
+    background-color: transparent;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    background-position: top right;
+    opacity: 0;
+  }
+}
+
+.headerContainer {
+  z-index:3;
+}
 
 .headerTitle {
   margin: 0;
