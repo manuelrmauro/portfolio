@@ -17,7 +17,7 @@
 
 }
 
-.navBtn {
+.navBtn, .navModesBtn {
   border: none;
   transition:background, color, 400ms;
 }

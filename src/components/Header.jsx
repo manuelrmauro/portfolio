@@ -67,13 +67,13 @@ function Header({ language, mode, changeLang, changeMode }) {
 
 				<button
 					onClick={(e) => handleChangeMode(e)}
-					className={`btn navBtn navBtn${mode} navModesBtn`}
+					className={`btn navBtn${mode} navModesBtn`}
 				>
 					{mode === 'LightMode' ? <BsLightbulbOff /> : <BsLightbulb />}
 				</button>
 				<button
 					onClick={(e) => handleChangeLang(e)}
-					className={`btn navBtn navBtn${mode} navModesBtn`}
+					className={`btn navBtn${mode} navModesBtn`}
 				>
 					{language === 'EN' ? 'ES' : 'EN'}
 				</button>

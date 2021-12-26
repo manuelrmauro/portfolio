@@ -51,6 +51,7 @@ opacity: 1;
 
 .btn {
   cursor: pointer;
+  font-size:1.15rem;
 }
 .ocultBtn {
   opacity: 0;

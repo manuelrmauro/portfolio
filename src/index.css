@@ -45,7 +45,7 @@ p , a, label {
 
 @media only screen and (max-width: 600px) {
 	html {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.nav {
@@ -53,7 +53,11 @@ p , a, label {
 		position: fixed !important;
 		top: 0;
 	}
-
+  .navBtn {
+    padding-left: 0.65vw;
+    padding-right: 0.65vw;
+  }
+/* 
 	.btn {
 		font-size: 0.9rem;
     padding-left: 3px;
@@ -61,14 +65,12 @@ p , a, label {
 	}
 	.navModesBtn {
 		font-size: 1.15rem;
-	}
+	}*/
   .topBtn {
     font-size:0.85rem !important;
-  }
-	.sectionHeader {
+  } 
+	.background {
 		background-size: 250% !important;
-		background-position:top;
-		height: 100vh !important;
 	}
 
   p {
@@ -77,25 +79,35 @@ p , a, label {
   
 }
 
-@media only screen and (max-width: 362px) {
-	html {
-		font-size: 12px;
-	}
+@media only screen and (max-width: 440px) {
+  .navBtn {
+    font-size: 3.4vw !important;
+  }
+  .navModesBtn {
+    font-size: 4.2vw !important;
+    padding-left: 0.65vw;
+    padding-right: 0.65vw;
+  }
+  .topBtn {
+    font-size:0.85rem !important;
+  } 
+}
 
-	
+@media only screen and (max-width: 370px) {
 
-	.btn {
+	/* .btn {
 		font-size: 0.8rem;
     padding-left: 2.5px;
 		padding-right: 2.5px;
-	}
+	} */
+  
 	.headerSubtitle {
 		text-align: center !important;
 	}
-  .navModesBtn {
+ /*  .navModesBtn {
 		font-size: 1.15rem;
 	}
   .topBtn {
     font-size:0.7rem !important;
-  }
+  } */
 }
