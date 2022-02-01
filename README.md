@@ -1,5 +1,9 @@
 # My Portfolio
 
+Link to app: https://manuelmauro-portfolio.web.app/
+
+Link to video: 
+
 <p align='center'>
     <img src='/screenshot.jpg' </img>
 </p>
