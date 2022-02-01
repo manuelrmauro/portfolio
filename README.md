@@ -7,6 +7,9 @@ Link to video:
 <p align='center'>
     <img src='/screenshot.jpg' </img>
 </p>
+<p align='center'>
+    <img src='/screenshot2.jpg' </img>
+</p>
 
 ### Description
 
@@ -17,6 +20,7 @@ Portfolio to show my info, projects, habilities, and contact me. Build with Java
 
 <ol>
     <li>Clone or download the repository</li>
+      <li>Open a terminal in '/app' and run 'npm install'</li>
     <li>Then run 'npm start'</li>
     <li>Enjoy it! 😁</li>
 </ol>
