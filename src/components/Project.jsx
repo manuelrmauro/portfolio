@@ -24,8 +24,8 @@ function Project({ name, summary, video, screenshots, github, link }) {
 			{video.length ? (
 				<div className="videoWraper">
 					<ReactPlayer
-						width="100%"
-						height="100%"
+						width="95%"
+						height="95%"
 						className="projectVideo"
 						url={video}
 						playsinline={true}

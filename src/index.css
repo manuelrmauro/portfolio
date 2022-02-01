@@ -39,6 +39,10 @@ h3 {
   font-size: 2rem;
 }
 
+p {
+  text-align: center !important;
+}
+
 p , a, label {
   font-size: 1.15rem;
 }
@@ -47,11 +51,25 @@ p , a, label {
 	html {
 		font-size: 14px;
 	}
+  .contactForm textarea {
+    height: 38vh !important;
+  }
+  .contactContainer {
+    min-height: calc(100vh  - 160px) !important;
+  }
+  .sectionHeader {
+    height: 100vh !important;
+  }
 
+  .navModes {
+    top: 9.5px !important; 
+  }
 	.nav {
 		justify-content: start !important;
 		position: fixed !important;
 		top: 0;
+    height: 44px !important;
+    padding-left: 6px;
 	}
   .navBtn {
     padding-left: 0.65vw;
@@ -82,6 +100,7 @@ p , a, label {
 @media only screen and (max-width: 440px) {
   .navBtn {
     font-size: 3.4vw !important;
+   
   }
   .navModesBtn {
     font-size: 4.2vw !important;

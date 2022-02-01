@@ -149,8 +149,10 @@
   background: none;
   z-index: 999;
   height: 30px;
+  margin-right: 6px;
 }
 
 .navModesBtn {
   background: none !important;
 }
+

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 79vh;
+  min-height: calc(100vh  - 156px);
 }
 
 p {
