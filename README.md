@@ -2,7 +2,7 @@
 
 Link to app: https://manuelmauro-portfolio.web.app/
 
-Link to video: 
+Link to video: https://vimeo.com/672533193
 
 <p align='center'>
     <img src='/screenshot.jpg' </img>
