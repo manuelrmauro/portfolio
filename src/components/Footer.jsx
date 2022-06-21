@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-const scrollToSection = () => {
+/* const scrollToSection = () => {
 	window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+}; */
 
 function Footer({ language }) {
 	return (

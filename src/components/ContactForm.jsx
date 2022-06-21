@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef, useState } from 'react';
 import { connect } from 'react-redux';
 import emailjs from 'emailjs-com';
