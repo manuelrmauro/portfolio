@@ -1,17 +1,35 @@
 [
 	{
 		"EN": {
+			"name": "Foodarity App",
+			"summary": "Market Place to buy, sell, and donate food soon to expire.<br/>More than anything, I worked on the Back-end area and controlling the flow of information between Front and Back.",
+			"video": "https://vimeo.com/672513649",
+			"screenshots": [],
+			"github": "https://github.com/manuelrmauro/foodarity",
+			"link": "https://foodarity.herokuapp.com/"
+		},
+		"ES": {
+			"name": "Foodarity App",
+			"summary": "Market Place para comprar, vender, y donar alimentos prontos a vencer.<br/>Mas que nada trabaje en el area de Back-end y controlando el flujo de información entre Front y Back.",
+			"video": "https://vimeo.com/672513649",
+			"screenshots": [],
+			"github": "https://github.com/manuelrmauro/foodarity",
+			"link": "https://foodarity.herokuapp.com/"
+		}
+	},
+	{
+		"EN": {
 			"name": "Portfolio",
-			"summary": "Description here",
-			"video": "",
+			"summary": "You already are in this page.",
+			"video": "https://vimeo.com/672533193",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/portfolio",
 			"link": "https://manuelmauro-portfolio.web.app/"
 		},
 		"ES": {
 			"name": "Portfolio",
-			"summary": "Descripcion aqui",
-			"video": "",
+			"summary": "Ya estás navegando en esta página.",
+			"video": "https://vimeo.com/672533193",
 			"screenshots": [],
 			"github": "https://github.com/manuelrmauro/portfolio",
 			"link": "https://manuelmauro-portfolio.web.app/"

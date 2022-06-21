@@ -8,7 +8,7 @@ const scrollToSection = (id) => {
 		duration: 800,
 		delay: 0,
 		smooth: 'easeInOutQuart',
-		offset: -29,
+		offset: window.innerWidth <= 600 ? 0 : -29,
 	});
 };
 

@@ -9,7 +9,7 @@ function ContactForm({ language, mode }) {
 	const [input, setInput] = useState({
 		user_name: '',
 		user_email: '',
-		message: '',
+		message: ''
 	});
 	const [errors, setErrors] = useState({});
   const [disabled, setDisabled] = useState(true)
@@ -52,11 +52,15 @@ function ContactForm({ language, mode }) {
     setErrors({...errors, user_email})
   },[input.user_email])
 
+	const [handleInit, setHandleInit] = useState(true)
+
   useEffect(() => {
     let message = {}
-    if (!input.message) {
+    if (!handleInit && !input.message) {
+			
       message = {EN: 'Enter a message', ES: 'Ingrese un mensaje'}
     }
+		setHandleInit(false)
     setErrors({...errors, message})
   },[input.message])
 
