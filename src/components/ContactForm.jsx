@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import emailjs from 'emailjs-com';
 import './ContactForm.css';
 import { useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactForm({ language, mode }) {
 	const form = useRef();
@@ -78,17 +80,22 @@ function ContactForm({ language, mode }) {
 			.then(
 				(result) => {
 					if (language === 'EN') {
-            alert('Message sent');
+            toast.success('Message sent');
           } else {
-            alert('Mensaje enviado');
+            toast.success('Mensaje enviado');
           }
+					setInput({
+						user_name: '',
+						user_email: '',
+						message: ' '
+					})
           e.target.reset();
 				},
 				(error) => {
 					if (language === 'EN') {
-            alert('An error has ocurred. Try later.');
+            toast.error('An error has ocurred. Try later.');
           } else {
-            alert('Ocurrió un error. Intente nuevamente.');
+            toast.error('Ocurrió un error. Intente nuevamente.');
           }
 				}
 			);
@@ -98,6 +105,7 @@ function ContactForm({ language, mode }) {
 
 	return (
 		<form className="contactForm" ref={form} onSubmit={sendEmail}>
+			<ToastContainer autoClose={1500}/>
 			<label>{language === 'EN' ? 'Name' : 'Nombre'}</label>
 			<input
 				type="text"
