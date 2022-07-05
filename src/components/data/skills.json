@@ -1,5 +1,5 @@
 {
-  "technical" : ["JavaScript", "TypeScript", "React", "Redux","Express","Node.js","HTML","CSS","Sequelize","SQL","Postgres","GitHub","Docker", "Apex"],
+  "technical" : ["JavaScript", "TypeScript", "React", "Next", "Redux","Express","Node.js","HTML","CSS","Sequelize","SQL","Postgres","GitHub","Docker", "Apex"],
   "soft" : {
     "EN": ["Scrum","Creativity","Problem solving","Flexibility","Analytical thinking","Critical thinking","Perseverance","Curiosity",
       "Self-taught","Emotional intelligence","Adaptability","Positive attitude"],
